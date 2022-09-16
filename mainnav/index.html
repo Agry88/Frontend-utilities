@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 </head>
 
 <body>
@@ -20,19 +21,22 @@
                 </button>
                 <span>海軍樂購生活館Love Go</span>
             </div>
-            <div class="mainav-search-block">
-                <div class="mainav-search-container">
-                    <button id="btn-search">
-                        <img src="./magnifying.svg" alt="Search">
-                    </button>
-                    <input id="text-search" type="text" placeholder="Search...">
-                </div>
-            </div>
-
             <div class="mainnav-right-block">
-                <div class="mainnav-right-container">
+                <button id="btn-mainnav-menu">
+                    <img src="./main-menu.png" alt="Menu">
+                </button>
+                <div class="mainnav-right-container" aria-expanded="false">
+                    <div class="mainav-search-block">
+                        <div class="mainav-search-container">
+                            <button id="btn-search">
+                                <img src="./magnifying.svg" alt="Search">
+                            </button>
+                            <input id="text-search" type="text" placeholder="Search...">
+                        </div>
+                    </div>
                     <div class="shopcar-section">
-                        <button class="btn-shopcar">
+                        <button class="btn-right-section btn-shopcar">
+                            <span>查看購物車</span>
                             <img src="./shopcar.svg" alt="Shopcar" class="mainnav-icons">
                         </button>
                         <div aria-display="false" class="popout-shopcar">
@@ -42,7 +46,7 @@
                             <ul class="popout-shopcar-list">
                                 <li class="popout-shopcar-item">
                                     <div class="popout-shopcar-img-block">
-                                        <img src="./magnifying.svg" alt="商品名稱">
+                                        <img src="./product.png" alt="商品名稱">
                                     </div>
                                     <div class="popout-shopcar-span-block">
                                         <span>產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</span>
@@ -51,7 +55,7 @@
                                 </li>
                                 <li class="popout-shopcar-item">
                                     <div class="popout-shopcar-img-block">
-                                        <img src="./magnifying.svg" alt="商品名稱">
+                                        <img src="./product.png" alt="商品名稱">
                                     </div>
                                     <div class="popout-shopcar-span-block">
                                         <span>產品名稱</span>
@@ -60,17 +64,19 @@
                                 </li>
                             </ul>
                             <div class="popout-shopcar-checkcar">
-                                <button>查看我的購物車</button>
+                                <button class="btn-right-section">查看我的購物車</button>
                             </div>
                         </div>
                     </div>
                     <div class="notice-section">
-                        <button class="btn-notice">
+                        <button class="btn-right-section btn-notice">
+                            <span>查看提醒</span>
                             <img src="./bell.svg" alt="Announce" class="mainnav-icons">
                         </button>
                     </div>
                     <div class="user-section">
-                        <button class="btn-user">
+                        <button class="btn-right-section btn-user">
+                            <span>查看使用者</span>
                             <img src="./logout.svg" alt="Logout" class="mainnav-icons">
                         </button>
                     </div>
